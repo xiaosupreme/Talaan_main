@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Yeseva+One&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #3F4C45;
+}
+
+.btn {
+    width: 20%;
+    border-radius: 5rem;
+    background: #6E8668;
+    color: aliceblue;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.btn:hover {
+    background: #FFA55B;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 9%;
+
+    background-color: #3F4C45;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+header .leftnav a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #FFA55B;
+    margin-right: 2rem;
+    transition: all ease-out 0.25s;
+}
+
+header .leftnav a img {
+    width: 3.5rem;
+}
+
+header .rightnav a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #FFA55B;
+    margin-left: 2rem;
+    transition: all ease-out 0.25s;
+}
+
+header a:hover {
+    color: #8d735e;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.home .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160rem;
+    height: 78rem;
+    padding: 7rem;
+    border-radius: 5rem 5rem 22rem 5rem;
+    background-color: #FFF4D7;
+}
+
+.home .content .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.home .content .title img {
+    width: 5rem;
+}
+
+.home .content h3 {
+    font-size: 10rem;
+    font-family: 'Yeseva One', cursive;
+    color: #4A3724;
+}
+
+.home .content p {
+    font-size: 3.5rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #6E8668;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.about .row {
+    width: 80%;
+    align-items: center;
+    gap: 6.5rem;
+}
+
+.about .feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 3rem;
+    background: #3F4C45;
+    width: 20%;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.606);
+
+}
+
+.about .feature img {
+    width: 100%;
+    border-radius: 200rem;
+}
+
+.about .feature h3 {
+    color: #FFA55B;
+    font-size: 3rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.about .content h3,
+p {
+    color: white;
+}
+
+.about .content h3 {
+    font-size: 8rem;
+    font-family: 'Yeseva One', cursive;
+}
+
+.about .content p {
+    font-size: 3rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* STORE PAGE */
+.btn-store {
+    width: 50% !important;
+    font-size: 1rem;
+    padding: 1rem 1rem !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: #FFA55B .25rem solid;
+    color: #4A3724 !important;
+}
+
+.btn-buy {
+    font-size: 1.5rem !important;
+}
+
+.home .content-store {
+    display: block !important;
+    align-items: normal !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    height: auto !important;
+    margin-top: 10.7rem;
+    border-radius: 5rem !important;
+}
+
+.store {
+    align-items: normal !important;
+    height: 200rem !important;
+}
+
+.home .content-store .title h3 {
+    font-size: 7rem !important;
+}
+
+.home .content-store .title p {
+    font-size: 3rem !important;
+}
+
+.home .content img {
+    width: 100%;
+}
+
+.fbook {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.fbook img {
+    width: 75% !important;
+    transform: translateY(5%);
+    z-index: 100;
+    filter: drop-shadow(13px 4px 15px rgba(0, 0, 0, 0.25));
+}
+
+.fauthor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fauthor h3 {
+    font-size: 2rem !important;
+    width: 100%;
+    transform: rotate(-90deg);
+}
+
+.fauthor img {
+    transform: translateX(-9rem);
+    border-radius: 5.5rem;
+    filter: drop-shadow(17px 10px 19px rgba(0, 0, 0, 0.25));
+}
+
+.shelf {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scaleX(118.25%);
+    filter: drop-shadow(0px 14px 15px rgba(0, 0, 0, 0.25));
+}
+
+.content-list {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.book {
+    width: 30%;
+}
+
+.book .row {
+    gap: 2rem;
+}
+
+.book img {
+    width: 100% !important;
+    box-shadow: 10px 10px 16px -6px rgba(0, 0, 0, 0.58);
+}
+
+.book .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.5rem;
+}
+
+.book .details2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.book .stars {
+    color: #FFA55B;
+}
+
+.book h3 {
+    font-size: 3rem !important;
+}
+
+.book h4 {
+    font-size: 1.5rem !important;
+    font-family: 'Source Code Pro', monospace;
+    color: #6E8668;
+}
+
+/* PAYMENT PAGE */
+
+.home .content-payment {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5rem !important;
+    justify-content: normal !important;
+    align-items: normal !important;
+    padding: 0 !important;
+}
+
+.home .content-payment .title {
+    justify-content: start !important;
+    width: 90% !important;
+    padding: 0rem !important;
+}
+.home .content-payment h3 {
+    font-size: 5rem;
+}
+.payment-sides {
+    height: 100%;
+}
+.payment-details {
+    display: flex;
+    gap: 2rem;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+.payment-details .divider {
+    margin: 0 !important;
+    width: 100% !important  ;
+}
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.payment-color {
+    background-image: url(./imgs/login.jpg);
+    background-size: cover;
+    border-radius: 0 5rem 5rem 0;
+}
+.home .form-control {
+    font-size: 1.75rem;
+    width: 100%;
+    padding: .75rem;
+    border: #FFA55B 2px solid;
+    border-radius: 1rem;
+    background-color: #ffa55b00;
+    color: #4A3724;
+    font-family: 'Source Code Pro', monospace;
+}
+.divider {
+    width: 90%;
+    height: 3px;
+    background-color: #6E8668;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+label {
+    font-size: 1.5rem;
+    font-family: 'Source Code Pro', monospace;
+}
+.home .content-payment .btn {
+    width: 50% !important;
+    font-size: 2rem;
+    padding: 1rem 1rem !important;
+    margin-top: 1rem;
+    background-color: #3F4C45 !important;
+    border-radius: 2rem;
+    color: #FFA55B !important;
+}
+
+/* ADD PAGE */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.home .content-add {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+}
+.home .content-add h3 {
+    font-size: 5rem;
+}
+.home .content-add .row {
+   width: 90%;
+}
+.home .content-add .title {
+    justify-content: start !important;
+    width: 90% !important;
+    padding: 0rem !important;
+}
+.home .content-add .form-control {
+    font-size: 2rem;
+    width: 100%;
+    padding: .75rem;
+    border: #FFA55B 2px solid;
+    border-radius: 1rem;
+    background-color: #ffa55b00;
+    color: #4A3724;
+    font-family: 'Source Code Pro', monospace;
+}
+.home .content-add .btn {
+    width: 50% !important;
+    font-size: 2rem;
+    padding: 1rem 1rem !important;
+    margin-top: 1rem;
+    background-color: #3F4C45 !important;
+    border-radius: 2rem;
+    color: #FFA55B !important;
+}
+
+/* BOOKS LIST AND GENRES LIST PAGE */
+.home .content-table {
+    flex-direction: column !important;
+    border-radius: 5rem !important;
+    gap: 1rem !important;
+}
+.home .content-table .title {
+    padding: 0rem;
+}
+.home .content-table h3 {
+    font-size: 3rem;
+}
+.home .content-table .row {
+    width: 95%;
+}
+.home .content-table .list {
+    width: 95%;
+    height: 75%;
+    font-size: 2rem;
+}
+.table tr {
+    border-color: #FFA55B !important;
+}
+.home .list .btn {
+    width: 20% !important;
+    margin-bottom: 2rem;
+}
+.home .list .table {
+    overflow-y: auto;
+    height: 100%;
+}
+.home .list table .btn {
+    width: 95% !important;
+    border-radius: 1.5rem !important;
+}
+.btn-del {
+    background-color: #e44141;
+    color: white;
+}
+.btn-upd {
+    background-color: #e0ae39;
+    color: white;
+}
+.btn-cl {
+    background-color: #3F4C45;
+    color: #FFA55B;
+}
+.btn-clm {
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 50rem;
+    background-color: #e44141;
+}
+.modal-content {
+    border-radius: 2rem;
+    background-color: #FFF4D7;
+}
+.modal-title {
+    font-size: 2rem
+}
+.modal-content .form-control {
+    font-size: 1.75rem;
+    width: 100%;
+    padding: .75rem;
+    border: #FFA55B 2px solid;
+    border-radius: 1rem;
+    background-color: #ffa55b00;
+    color: #4A3724;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* ADMIN HOME */
+.content-admin {
+    border-radius: 5rem !important;
+}
+.admin {
+    height: 50vh !important;
+}
+.admin .row {
+    justify-content: center !important;
+    width: 100% !important;
+}
+.admin-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 3rem;
+    background: #FFF4D7;
+    width: 20%;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.606);
+}
+.admin-card h3 {
+    font-size: 4rem;
+    color: #4A3724;
+}
+.admin-card p {
+    font-size: 2rem;
+    color: #3F4C45;
+}
+.btn-admin {
+    width: 90% !important;
+}
